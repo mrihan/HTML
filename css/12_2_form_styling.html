@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Form Styling</title>
+    <title>Form styling</title>
     <style>
       * {
         box-sizing: border-box;
@@ -15,7 +15,7 @@
         padding: 0;
       }
       body {
-        background-color: #344a72;
+        background: #344a72;
         font-family: "Raleway", sans-serif;
         color: white;
         line-height: 1.8em;
@@ -28,33 +28,32 @@
       a {
         text-decoration: none;
       }
-      .form-wrap {
+      .form-warp {
         background: white;
-        padding: 15px 25px;
-        color: #333;
+        padding: 15px 20px;
+        color: #333333;
       }
-
-      .form-wrap h1 {
+      .form-warp h1 {
         text-align: center;
       }
-      .form-wrap p {
+      .form-warp p {
         text-align: center;
         line-height: 2.4em;
       }
-      .form-wrap .form-group {
+      .form-warp .form-group {
         margin-top: 15px;
       }
-      .form-wrap .form-group label {
+      .form-warp .form-group label {
         display: block;
         color: #666666;
       }
-      .form-wrap .form-group input {
+      .form-warp .form-group input {
         width: 100%;
         padding: 10px;
         border: #dddddd solid 1px;
         border-radius: 5px;
       }
-      .form-wrap button {
+      .form-warp button {
         background: #49c1a2;
         display: block;
         width: 100%;
@@ -63,40 +62,37 @@
         color: white;
         cursor: pointer;
       }
-      .form-wrap button :hover {
+      .form-warp button :hover {
         background: #47c1a2;
       }
-      .form-wrap .buttom-text {
+      .form-warp .bottom-text {
         font-size: 13px;
         margin-top: 20px;
       }
-      footer {
-        text-align: center;
-        margin-top: 10px;
-      }
-      footer a {
-        color: #49c1a2;
+      footer p a {
+        color: #47c1a2;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="form-wrap">
-        <h1>Sing Up</h1>
+      <div class="form-warp">
+        <h1>Sing UP</h1>
         <p>It's free and only takes a minute</p>
-        <form action="">
+        <form action="text">
           <div class="form-group">
-            <label for="frist-name">Frist Name</label>
-            <input type="text" name="firstname" id="frist-name" />
+            <label for="frist-name">First Name</label>
+            <input type="text" name="first name" id="first-name" />
           </div>
           <div class="form-group">
-            <label for="last-name">Frist Name</label>
-            <input type="text" name="lastname" id="last-name" />
+            <label for="last-name">last Name</label>
+            <input type="text" name="last name" id="last-name" />
           </div>
           <div class="form-group">
-            <label for="Email">Email</label>
-            <input type="text" name="Email" id="Email" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
           </div>
+
           <div class="form-group">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" />
@@ -107,14 +103,17 @@
           </div>
           <button type="submit" class="btn">Sing Up</button>
           <p class="bottom-text">
-            By clicking the Sing Up button, you agree to our
-            <a href="#">Temrs & Conditions</a> and
+            By clicking the Sing Up button. you agree to our
+            <a href="#">Tems & Condisions</a> and
             <a href="#">Privacy Policy</a>
           </p>
         </form>
       </div>
       <footer>
-        <p>Alredy have an account <a href="#">Login Here</a></p>
+        <p>
+          Already have an account?
+          <a href="#">Login Here</a>
+        </p>
       </footer>
     </div>
   </body>
